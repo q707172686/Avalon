@@ -68,6 +68,7 @@ gmt_modified|date_time|评论修改时间|×|-
 
 - - - -
 :five: 标签和帖子关系表（tag_post_rel）
+
 列名|数据类型|备注|能否为空|默认值
 :----:|:----:|:----:|:----:|:----:
 tp_id|unsigned int|主键|×|-
