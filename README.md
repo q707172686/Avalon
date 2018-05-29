@@ -1,5 +1,7 @@
 Avalon
 ----
+![](https://img.shields.io/badge/language-java-orange.svg) [![](https://img.shields.io/badge/license-MIT-000000.svg)](./LICENSE)
+
 ##### 简介
 - 一个简单的论坛系统，使用Spring、Spring-MVC、MyBatis构建
 - 前端使用BootStrap4、JQuery和Layer弹窗
