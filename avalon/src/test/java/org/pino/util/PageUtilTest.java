@@ -15,7 +15,7 @@ import java.util.Arrays;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:spring/spring-*.xml")
-public class UtilTest {
+public class PageUtilTest {
 
     @Test
     public void testPageUtil() {

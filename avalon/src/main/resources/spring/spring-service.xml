@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!-- 扫描service包及其子包 -->
-    <context:component-scan base-package="org.pino.service"/>
+    <context:component-scan base-package="org.pino.service;org.pino.util"/>
 
     <!-- 配置事务管理器(mybatis采用的是JDBC的事务管理器) -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

@@ -6,7 +6,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 读取properties的数据库连接配置 ignore-unresolvable忽略找不到的属性，不忽略会抛出异常 -->
-    <context:property-placeholder location="classpath:mybatis/jdbc.properties" ignore-unresolvable="true"/>
+    <context:property-placeholder location="classpath:properties/jdbc.properties" ignore-unresolvable="true"/>
 
     <!-- 配置数据源druid连接池 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">

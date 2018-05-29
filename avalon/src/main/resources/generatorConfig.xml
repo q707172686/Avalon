@@ -29,6 +29,8 @@
         <javaModelGenerator targetPackage="org.pino.entity" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
+            <!-- 是否对类CHAR类型的列的数据进行trim操作 -->
+            <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!-- *Mapper.xml 文件的位置  修改targetPackage和targetProject-->
@@ -43,7 +45,20 @@
         </javaClientGenerator>
 
         <!-- 相关表的配置 多表就配置多个  tableName表名  domainObjectName类名 -->
-        <table tableName="yonghubiao" domainObjectName="YongHuBiao" enableCountByExample="false"
+        <table tableName="user" domainObjectName="User" enableCountByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+
+        <table tableName="tag_post_rel" domainObjectName="TagPostRel" enableCountByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <table tableName="tag" domainObjectName="Tag" enableCountByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <table tableName="post" domainObjectName="Post" enableCountByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <table tableName="comment" domainObjectName="Comment" enableCountByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false"/>
 

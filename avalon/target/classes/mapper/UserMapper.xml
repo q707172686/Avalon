@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.pino.dao.UserMapper">
+    <!-- 查找用户名是否同名 -->
+    <select id="checkUsername" resultType="Integer" parameterType="String">
+        SELECT COUNT(*)
+        FROM `user`
+        WHERE uk_username=#{username}
+    </select>
+
+    <insert id="insertUser" parameterType="org.pino.entity.User">
+        INSERT INTO `user`(uk_username, password, uk_email, self_introduction, header, tag_ids, gmt_create, gmt_modified)
+        VALUES (#{user.ukUsername},#{user.password},#{user.ukEmail},
+        #{user.selfIntroduction},#{user.header},#{user.tagIds},now(),now())
+    </insert>
+
+</mapper>
