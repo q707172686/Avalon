@@ -38,7 +38,7 @@
         <!-- MyBatis全局配置文件位置 -->
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
         <!-- Mapper的xml文件的位置 -->
-        <!--<property name="mapperLocations" value="classpath:mapper/*.xml"/>-->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
     </bean>
 
     <!-- 配置扫描dao接口包，动态实现dao接口，注入到spring容器 -->
