@@ -32,7 +32,7 @@
     <!-- 拦截所有请求 -->
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
 </web-app>

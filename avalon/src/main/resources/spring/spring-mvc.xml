@@ -26,6 +26,10 @@
     <!-- 扫描web相关的controller -->
     <context:component-scan base-package="org.pino.controller"/>
 
+    <!--<mvc:resources mapping="/js/**" location="/static/js/"/>-->
+    <!--<mvc:resources mapping="/css/**" location="/static/css/"/>-->
+    <!--<mvc:resources mapping="/image/**" location="/static/image/"/>-->
+
     <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
 
 </beans>
