@@ -46,9 +46,10 @@ public interface UserMapper {
 
     /**
      * 更新用户头像的方法
-     * @param pkUid 用户主键
+     *
+     * @param pkUid  用户主键
      * @param header 用户头像名称
      * @return 返回更新的条数
      */
-    Integer updateUserHeader(@Param("pkUid") String pkUid,@Param("header") String header);
+    Integer updateUserHeader(@Param("pkUid") String pkUid, @Param("header") String header);
 }
