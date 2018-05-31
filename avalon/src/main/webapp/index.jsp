@@ -16,30 +16,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Avalon</title>
+
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Avalon</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Go</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Java</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Linux</a>
-            </li>
-        </ul>
-        <form class="form-inline navbar-form pull-right">
-            <input class="form-control" type="text" placeholder="Search">
-            <button class="btn btn-success-outline" type="submit">Search</button>
-        </form>
-    </nav>
-</div>
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="nav-header">
+
+            <a class="navbar-brand" href="#" style="font-family: 'Abril Fatface', cursive;">AVALON</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Go</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Linux</a>
+                </li>
+            </ul>
+            <form class="form-inline navbar-form pull-left">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+        </div>
+    </div>
+</nav>
 
 <div class="container-fluid">
 </div>

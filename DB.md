@@ -39,6 +39,8 @@ pk_tag_id|unsigned int|标签表主键约束|×|-
 uk_tag_name|varchar(10)|标签名称|×|-
 tag_image|varchar(30)|标签图片|×|-
 tag_descripe|varchar(30)|标签描述|×|-
+tag_level|unsigned tinyint|标签等级（1,2）|×|-
+parent-id|unsigned int|标签父级ID|×|-
 gmt_create|date_time|标签创建时间|×|-
 gmt_modified|date_time|标签修改时间|×|-
 
