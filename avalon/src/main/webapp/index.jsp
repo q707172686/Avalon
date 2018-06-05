@@ -19,6 +19,7 @@
 
 </head>
 <body>
+<%-- 一级导航栏开始 --%>
 <nav class="navbar navbar-dark bg-dark navbar-expand-sm navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="nav-header">
@@ -31,23 +32,76 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Go</a>
+                    <a class="nav-link" href="#">前端</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Java</a>
+                    <a class="nav-link" href="#">后端</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Linux</a>
+                    <a class="nav-link" href="#">区块链</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">操作系统</a>
                 </li>
             </ul>
-            <form class="form-inline navbar-form pull-left">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
+
         </div>
     </div>
-</nav>
 
+    <div class="btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            <img src="${ctx}/static/image/avalon.ico" alt="" class="img-responsive"
+                 style="max-width: 100%;height:auto;">
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">个人主页</a>
+            <a class="dropdown-item" href="#">设置</a>
+            <a class="dropdown-item" href="#">登出</a>
+        </div>
+    </div>
+
+    <form class="form-inline navbar-form pull-left">
+        <input class="form-control" type="text" placeholder="搜索">
+    </form>
+</nav>
+<%-- 一级导航栏结束 --%>
+<%-- 主体开始 --%>
 <div class="container-fluid">
+    <%-- 二级标题开始 --%>
+    <div class="row">
+        <div class="col-md-1">
+            <a href="" class="text-center">Java</a>
+        </div>
+        <div class="col-md-1">
+            <a href="" class="text-center">JavaScript</a>
+        </div>
+        <div class="col-md-1">
+            <a href="" class="text-center">Go</a>
+        </div>
+        <div class="col-md-1">
+            <a href="" class="text-center">Linux</a>
+        </div>
+        <div class="col-md-1">
+            <a href="" class="text-center">Node</a>
+        </div>
+        <div class="col-md-1">
+            <a href="" class="text-center">React</a>
+        </div>
+        <div class="col-md-1">
+            <a href="" class="text-center">Spring</a>
+        </div>
+        <div class="col-md-1">
+            <a href="" class="text-center">ML</a>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-secondary">关注标签 <span>3</span></button>
+            <button type="button" class="btn btn-secondary">关注用户 <span>5</span></button>
+            <button type="button" class="btn btn-secondary">收藏帖子 <span>8</span></button>
+        </div>
+    </div>
+    <%-- 二级标题结束 --%>
+
 </div>
 
 <%-- JQuery必须先引用 --%>

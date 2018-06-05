@@ -1,5 +1,7 @@
 package org.pino.entity;
 
+import com.sun.istack.internal.NotNull;
+
 import java.sql.Date;
 
 /**
@@ -128,6 +130,7 @@ public class User {
 
     /**
      * 重写toString()方法，方便测试
+     *
      * @return 一个包含实体类内容的字符串
      */
     @Override

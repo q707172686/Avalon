@@ -46,10 +46,13 @@ public final class BaseResult<T> implements Serializable {
      * @param success 是否响应成功
      * @param error   失败的信息
      */
-    public BaseResult(Boolean success, String error) {
+    private BaseResult(Boolean success, String error) {
         this.success = success;
         this.error = error;
     }
+
+
+
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -81,6 +84,7 @@ public final class BaseResult<T> implements Serializable {
 
     /**
      * 重写toString()方法，方便测试
+     *
      * @return 一个包含了类字段内容的字符串
      */
     @Override
