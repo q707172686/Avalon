@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pino.avalon.dao.UserFollowMapper">
+  <resultMap id="BaseResultMap" type="com.pino.avalon.model.UserFollow">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="uf_id" jdbcType="INTEGER" property="ufId" />
+    <result column="u_id" jdbcType="INTEGER" property="uId" />
+    <result column="follow_id" jdbcType="INTEGER" property="followId" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="VARCHAR" property="gmtModified" />
+  </resultMap>
+</mapper>

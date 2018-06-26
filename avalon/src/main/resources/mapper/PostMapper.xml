@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="org.pino.dao.PostMapper" >
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pino.avalon.dao.PostMapper">
+  <resultMap id="BaseResultMap" type="com.pino.avalon.model.Post">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pk_pid" jdbcType="INTEGER" property="pkPid" />
+    <result column="u_id" jdbcType="INTEGER" property="uId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="praise_time" jdbcType="INTEGER" property="praiseTime" />
+    <result column="collection_time" jdbcType="INTEGER" property="collectionTime" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+  </resultMap>
 </mapper>

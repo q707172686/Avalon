@@ -1,38 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="org.pino.dao.UserMapper">
-
-    <!-- 查找用户名是否同名 -->
-    <select id="checkUsername" resultType="Integer" parameterType="String">
-        SELECT COUNT(*)
-        FROM `user`
-        WHERE uk_username=#{username}
-    </select>
-
-    <!-- 插入用户 -->
-    <insert id="insertUser">
-        INSERT INTO `user`(uk_username, password, uk_email, self_introduction, header, tag_ids, gmt_create, gmt_modified)
-        VALUES (#{ukUsername},#{password},#{ukEmail},#{selfIntroduction},#{header},#{tagIds},now(),now())
-    </insert>
-
-    <!-- 更新用户密码 -->
-    <update id="updatePassword">
-        UPDATE `user`
-        SET password=#{password},gmt_modified=now()
-        WHERE pk_uid=#{pkUid}
-    </update>
-
-    <!-- 更新自我介绍 -->
-    <update id="updateSelfIntroduce">
-        UPDATE `user`
-        SET self_introduction=#{selfIntroduce},gmt_modified=now()
-        WHERE pk_uid=#{pkUid}
-    </update>
-
-    <!-- 更新头像 -->
-    <update id="updateUserHeader">
-        UPDATE `user`
-        SET header=#{header}
-        WHERE pk_uid=#{pkUid}
-    </update>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pino.avalon.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.pino.avalon.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pk_uid" jdbcType="INTEGER" property="pkUid" />
+    <result column="uk_username" jdbcType="VARCHAR" property="ukUsername" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="uk_email" jdbcType="VARCHAR" property="ukEmail" />
+    <result column="self_introduction" jdbcType="VARCHAR" property="selfIntroduction" />
+    <result column="header" jdbcType="VARCHAR" property="header" />
+    <result column="tag_ids" jdbcType="VARCHAR" property="tagIds" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+  </resultMap>
 </mapper>

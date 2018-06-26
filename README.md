@@ -3,8 +3,7 @@
 ![](https://img.shields.io/badge/language-java-orange.svg) [![](https://img.shields.io/badge/license-MIT-000000.svg)](./LICENSE)
 
 ##### 简介
-- 一个简单的论坛系统，使用Spring、Spring-MVC、MyBatis构建
-- 前端使用BootStrap4、JQuery和Layer弹窗
+- 一个简单的论坛系统，使用Spring-Boot、MyBatis、GraphQL、vue构建
 - 发帖包含markdown解析器
 ##### [功能脑图](http://naotu.baidu.com/file/db9338d51939d2167a6ba5b6f1251ffa?token=0a7c11b6e3cb2951)
 ![](./Avalon.png)
